@@ -1,0 +1,18 @@
+{
+  "arquitectura": "DenseNet121",
+  "configuracion": "BASELINE",
+  "preprocesamiento": "Percentiles",
+  "sensibilidad": 82.22222222222221,
+  "especificidad": 100.0,
+  "fnr": 17.77777777777778,
+  "auc_roc": 0.9318518518518518,
+  "mcc": 0.8355316915277181,
+  "f1_score": 0.9024390243902439,
+  "tp": 37,
+  "tn": 45,
+  "fp": 0,
+  "fn": 8,
+  "epocas": 5,
+  "tiempo_segundos": 118.69317293167114,
+  "timestamp": "2025-12-26 19:50:10"
+}
