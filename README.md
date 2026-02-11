@@ -17,43 +17,6 @@ Los resultados aquí presentados corresponden a los experimentos descritos y dis
 
 ## Estructura del repositorio
 
-├── src/
-
-│ ├── preprocessing/ # Scripts de preprocesamiento de mamografías
-
-│ ├── datasets/ # Construcción y normalización de datasets
-
-│ ├── models/ # Definición de arquitecturas y wrappers
-
-│ ├── evaluation/ # Métricas y evaluación experimental
-
-│ └── utils/ # Funciones auxiliares
-
-│
-
-├── experiments/
-
-│ ├── baseline/ # Experimentos base
-
-│ ├── finetuning/ # Ajuste fino de modelos
-
-│ └── external_validation/ # Validación externa
-
-│
-
-├── notebooks/
-
-│ ├── exploratory_analysis.ipynb
-
-│ └── experiments_summary.ipynb
-
-│
-
-├── assets/
-
-│ ├── figures/ # Figuras utilizadas en la tesis
-
-│ └── saliency_examples/ # Ejemplos de mapas de saliencia
 
 │
 
