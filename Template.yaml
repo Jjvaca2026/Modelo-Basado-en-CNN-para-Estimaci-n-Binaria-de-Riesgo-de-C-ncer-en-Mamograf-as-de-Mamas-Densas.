@@ -1,0 +1,68 @@
+# CONFIGURACIÓN EXPERIMENTAL (TEMPLATE)
+# Este archivo define las decisiones experimentales
+# usadas en la etapa de entrenamiento y evaluación
+# a partir de imágenes PNG previamente procesadas.
+#
+# No controla la conversión DICOM → PNG ni la EDA inicial.
+
+# ENTORNO DE EJECUCIÓN
+
+# Entorno esperado: Google Colab
+# Acelerador: TPU (según disponibilidad)
+execution_environment: colab
+
+
+# RUTAS DE DATOS PROCESADOS
+
+# Ruta en Google Drive donde están las imágenes PNG
+# organizadas por dataset y preprocesamiento
+data_root: /content/drive/MyDrive/mamografias_png
+
+# Ruta donde se guardarán resultados experimentales
+output_root: /content/drive/MyDrive/resultados_experimentos
+
+
+# DEFINICIÓN CLÍNICA DEL PROBLEMA
+
+risk_definition:
+  low_risk: [1, 2, 3]
+  high_risk: [4, 5, 6]
+
+decision_threshold: 0.9
+
+
+# PREPROCESAMIENTO A EVALUAR
+
+# Preprocesamiento aplicado a las imágenes PNG
+# (ya generado previamente)
+preprocessing_method: percentiles   # percentiles | wavelet | HE | CLAHE
+
+
+# MODELO
+
+model_architecture: densenet121      # densenet121 | inception_v3
+pretrained: true
+
+
+# ENTRENAMIENTO
+
+max_epochs: 20            # Límite superior
+early_stopping_patience: 5
+
+# Dataset desbalanceado
+use_class_weights: true
+# Los valores específicos se describen en la tesis
+
+# VALIDACIÓN
+
+cross_validation:
+  enabled: true
+  k_folds: 10
+  shuffle: true
+
+
+# INTERPRETABILIDAD
+
+saliency_analysis:
+  enabled: true
+  selected_cases: [TP, TN, FP, FN]   # Selección manual, análisis preliminar
