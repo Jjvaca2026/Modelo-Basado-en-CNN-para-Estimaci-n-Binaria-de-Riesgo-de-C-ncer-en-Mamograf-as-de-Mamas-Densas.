@@ -1,0 +1,86 @@
+# ARCHIVOS DE PYTHON (no son código fuente)
+
+# Carpetas de caché que Python genera automáticamente.
+# No contienen lógica, solo versiones compiladas locales.
+__pycache__/
+
+# Archivos bytecode generados al ejecutar scripts.
+# Cambian según versión de Python y sistema operativo.
+*.pyc
+*.pyo
+*.pyd
+
+# JUPYTER NOTEBOOKS
+
+
+# Checkpoints automáticos de Jupyter.
+# No representan análisis nuevos ni reproducibles.
+.ipynb_checkpoints/
+
+
+# ARCHIVOS DEL SISTEMA OPERATIVO
+
+# Archivos ocultos creados por macOS.
+# No tienen relación con el proyecto.
+.DS_Store
+
+# Archivos ocultos creados por Windows.
+Thumbs.db
+
+
+# ENTORNOS VIRTUALES
+
+# Entornos locales de Python.
+# Son específicos de cada máquina y NO reproducibles.
+.env
+.venv
+venv/
+env/
+
+# MODELOS ENTRENADOS
+
+# Pesos de modelos entrenados.
+# Pueden contener información memorizada de pacientes.
+# Su distribución es éticamente cuestionable en contexto clínico.
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.joblib
+
+
+# LOGS DE EJECUCIÓN
+
+# Registros de entrenamiento y ejecución.
+# Son archivos locales, voluminosos y no necesarios para replicación.
+logs/
+*.log
+
+
+# DATOS CLÍNICOS Y DERIVADOS
+
+# Carpetas que podrían contener imágenes médicas
+# o archivos derivados directamente de datasets clínicos.
+# Aunque los datasets sean públicos, redistribuirlos no es apropiado.
+data/
+dataset/
+datasets/
+imagenes/
+mamografias/
+
+
+# RESULTADOS PESADOS
+
+# Salidas de experimentos (predicciones, curvas, métricas completas).
+# Se prioriza subir resultados resumidos (CSV/JSON), no dumps completos.
+resultados/
+outputs/
+
+
+# ARCHIVOS TEMPORALES Y RESPALDOS
+
+# Archivos temporales creados por editores o durante ejecuciones.
+# No aportan a la reproducibilidad ni al análisis.
+*.tmp
+*.bak
+*.swp
