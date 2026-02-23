@@ -1,9 +1,24 @@
 # Modelo basado en CNN para estimación binaria de riesgo de cáncer en mamografías digitales de mamas densas, utilizando BI-RADS como referencia. 
 
+![Licencia](https://img.shields.io/badge/license-MIT-green)
+> Proyecto finalizado y documentado como parte de un trabajo de grado de maestría.
+
 Este repositorio documenta el pipeline desarrollado en el trabajo de grado de maestría para la **estimación binaria de riesgo radiológico** en mamografías de mamas densas, utilizando redes neuronales convolucionales (CNN) y datasets públicos.
 
 **Importante**:  
 Este trabajo **no propone un sistema de diagnóstico clínico**, sino un modelo de **estimación de riesgo** alineado con criterios radiológicos (BI-RADS), con énfasis en la reducción de falsos negativos.
+
+## Índice
+
+- [Descripción general](#descripción-general)
+- [Pipeline general del experimento](#pipeline-general-del-experimento)
+- [Estructura del repositorio](#estructura-del-repositorio)
+- [Ejemplos visuales del pipeline](#ejemplos-visuales-del-pipeline)
+- [Configuración experimental](#configuración-experimental)
+- [Reproducibilidad y consideraciones éticas](#reproducibilidad-y-consideraciones-éticas)
+- [Requisitos](#requisitos)
+- [Referencia](#referencia)
+- [Licencia](#licencia)
 
 ## Descripción general
 
